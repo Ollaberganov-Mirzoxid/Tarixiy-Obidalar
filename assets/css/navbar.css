@@ -1,0 +1,300 @@
+/*main-navbar css start*/
+.main-navbar {
+    padding: 0px 40px;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    border-bottom: 2px solid gray;
+    left: 0;
+    transition: all 0.3s ease;
+
+}
+
+/**scrol bo'lgandagi kodlar boshlanishi**/
+.main-navbar.scrolled {
+    height: 67px;
+    background-color: rgb(40, 40, 40, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.main-navbar.scrolled .nav-links li a {
+    color: #fff;
+    /* Scroll bo'lganda qora rang */
+}
+
+.main-navbar.scrolled .nav-links a:hover,
+.main-navbar.scrolled .nav-links a.active {
+    color: #009961;
+    /* Hover va active scroll vaqtida ko'k rang */
+}
+
+.main-navbar.scrolled .nav-links li:hover::after,
+.main-navbar.scrolled .nav-links li.active::after {
+    background-color: #009961;
+    /* Hover uchun pastki chiziq */
+}
+
+.main-navbar.scrolled .nav-links a:hover::after,
+.main-navbar.scrolled .nav-links a.active::after {
+    border-bottom-color: #009961;
+    /* Scroll vaqtida uchburchakning rangi */
+}
+
+.main-navbar.scrolled .logo h1 {
+    font-size: 2rem;
+}
+
+.main-navbar.scrolled .logo img {
+    width: 50px;
+}
+
+.main-navbar.scrolled .nav-links a::after {
+    top: 33px;
+}
+
+.main-navbar.scrolled .nav-links li::after,
+.main-navbar.scrolled .nav-links a::after {
+    bottom: -60%;
+}
+
+.main-navbar.scrolled .login {
+    height: 40px;
+}
+
+.main-navbar.scrolled .login-btn {
+    font-size: 18px;
+}
+
+/**scrol bo'lgandagi kodlar tugashi**/
+
+
+.logo {
+
+    width: 20%;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #009961 !important;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.links {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    margin: 0;
+    gap: 20px;
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links li::after,
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    /* Matndan pastda joylashgan */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links li::after {
+    border-top: 3px solid #009961;
+    /* Rangli uchburchak */
+}
+
+.nav-links a::after {
+    top: 45px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #009961;
+    /* Rangli uchburchak */
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    opacity: 1;
+    width: auto;
+    transition: all 0.3s ease;
+    /* Hover qilinganda uchburchak ko‘rinadi */
+
+}
+
+.nav-links li:hover::after,
+.nav-links li.active::after {
+    opacity: 1;
+    width: 100%;
+    transition: all 0.3s ease;
+    /* Hover qilinganda uchburchak ko‘rinadi */
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #009961;
+    /* Hover va active vaqtida matn rangi */
+}
+
+.extra {
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    margin: 0px;
+    width: 215px;
+    height: 40px;
+}
+
+.login {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    color: white;
+    padding: 5px 40px;
+    border-radius: 50px;
+    background-color: #009961;
+}
+
+.login-btn {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/*main-navbar css end*/
+
+/*main-header css start*/
+.header-container,
+.login-container {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 20, 66, 0.7), rgba(0, 20, 66, 0.7)), url(../img/xiva.jpg);
+    background-size: auto, auto;
+    background-position: center top;
+    background-size:contain;
+    padding: 120px 0 60px 0;
+    transition: 0.5s;
+    height: 400px;
+}
+
+.header-container-in,
+.login-container-in {
+    width: 100%;
+    height: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container-in h4{
+    color: #00d1f9;
+    font-size: 3.5rem;
+    text-align: center;
+}
+/*main-header css end*/
+
+/*Statistics Start*/
+.container-all-statistics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F2F9F9;
+    height: 420px;
+    background: linear-gradient(rgba(25, 64, 154, 0.9), rgba(25, 64, 154, 0.95)),
+        url(../img/statistics.jpg);
+    background-position: center;
+
+}
+
+.container-statistics {
+    display: flex;
+    justify-content: center;
+}
+
+.container-statistics-in {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+
+.container-statistic-in-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #00d1f9;
+}
+
+.container-statistic-in-icon i {
+    font-size: 48px;
+}
+
+.container-statistic-in-text {
+    text-align: center;
+    width: 100%;
+}
+
+.container-statistic-in-text h4 {
+    color: #fff;
+    margin: 24px 0;
+}
+
+.container-statistic-in-text span {
+    font-size: 2rem !important;
+}
+
+/*Statistics End*/

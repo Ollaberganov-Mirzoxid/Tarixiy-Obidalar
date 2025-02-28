@@ -1,0 +1,153 @@
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.article {
+
+    display: flex;
+    margin-bottom: 50px;
+    gap: 30px;
+    transition: transform 0.8s;
+}
+
+.article:hover {
+    transform: scale(1.06);
+}
+
+.article-img {
+    flex: 0 0 240px;
+
+    position: relative;
+}
+
+.article-img img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #009961;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category.double {
+    display: flex;
+}
+
+.category.double span:first-child {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.article-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 28px;
+    color: #4a0d66;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.author img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-name {
+    color: #4a0d66;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.date {
+    color: #666;
+    font-size: 13px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.date:before {
+    content: "•";
+    margin-right: 10px;
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #009961;
+    color: white;
+    width: 25%;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    align-self: flex-start;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+}
+
+.read-more:hover {
+    background: #08b374;
+}
+
+@media (max-width: 768px) {
+    .article {
+        flex-direction: column;
+    }
+
+    .article-img {
+        flex: 0 0 200px;
+    }
+}
+</style>
