@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Articles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+        
+        body {
+            background-color: #ffffff;
+            padding: 40px;
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .article {
+         
+            display: flex;
+            margin-bottom: 50px;
+            gap: 30px;
+            transition: transform 0.8s;
+        }
+
+        .article:hover{
+            transform: scale(1.06);
+        }
+        
+        .article-img {
+            flex: 0 0 240px;
+            
+            position: relative;
+        }
+        
+        .article-img img {
+            width: 100%;
+            border-radius: 10px;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .category {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #009961;
+            color: white;
+            padding: 4px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .category.double {
+            display: flex;
+        }
+        
+        .category.double span:first-child {
+            padding-right: 10px;
+            margin-right: 10px;
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .article-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h2 {
+            font-size: 28px;
+            color: #4a0d66;
+            margin-bottom: 16px;
+            line-height: 1.2;
+            font-weight: bold;
+        }
+        
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        
+        .author img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .author-name {
+            color: #4a0d66;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+        }
+        
+        .date {
+            color: #666;
+            font-size: 13px;
+            margin-left: 10px;
+            text-transform: uppercase;
+        }
+        
+        .date:before {
+            content: "•";
+            margin-right: 10px;
+        }
+        
+        .description {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .read-more {
+            display: inline-block;
+            background-color: #009961;
+            color: white;
+            padding: 8px 16px;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 20px;
+            text-decoration: none;
+            align-self: flex-start;
+            letter-spacing: 0.5px;
+            border: none;
+            cursor: pointer;
+        }
+        .read-more:hover{
+            background: #08b374;
+        }
+        
+        @media (max-width: 768px) {
+            .article {
+                flex-direction: column;
+            }
+            
+            .article-img {
+                flex: 0 0 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Article 1 -->
+        <div class="article">
+            <div class="article-img">
+                <img src="assets/img/xiva.jpg" alt="Medieval battle scene">
+                <div class="category">MEDIEVAL HISTORY</div>
+            </div>
+            <div class="article-content">
+                <h2>The Myth of Barbarian Hordes: Reimagining Ancient Conquerors</h2>
+                <div class="author">
+                    <img src="assets/img/xiva.jpg" alt="Author">
+                    <span class="author-name">Daniel Wood</span>
+                    <span class="date">May 3</span>
+                </div>
+                <p class="description">
+                    Uncover the truth behind the mythos of barbarian hordes that once swept across ancient civilizations. This exploration challenges narratives, offering a perspective on the diverse cultures and motivations of these warriors.
+                </p>
+                <button class="read-more">READ MORE</button>
+            </div>
+        </div>
+        
+        <!-- Article 2 -->
+        <div class="article">
+            <div class="article-img">
+                <img src="assets/img/xiva.jpg" alt="Mona Lisa">
+                <div class="category double">
+                    <span>AGE OF EXPLORATION</span>
+                    <span>MEDIEVAL ART</span>
+                </div>
+            </div>
+            <div class="article-content">
+                <h2>14 Things You Didn't Know About the Mona Lisa</h2>
+                <div class="author">
+                    <img src="/api/placeholder/50/50" alt="Author">
+                    <span class="author-name">Daniel Wood</span>
+                    <span class="date">Mar 10</span>
+                </div>
+                <p class="description">
+                    Her tricky smile and timeless allure have inspired academic study and artistic emulation for more than five centuries. But beyond the enigmatic expression lies a wealth of lesser-known facts about Leonardo da Vinci's masterpiece.
+                </p>
+                <button class="read-more">READ MORE</button>
+            </div>
+        </div>
+        
+        <!-- Article 3 -->
+        <div class="article">
+            <div class="article-img">
+                <img src="assets/img/xiva.jpg" alt="Viking ship">
+                <div class="category">MEDIEVAL HISTORY</div>
+            </div>
+            <div class="article-content">
+                <h2>Viking Navigation: Masters of the Northern Seas</h2>
+                <div class="author">
+                    <img src="/api/placeholder/50/50" alt="Author">
+                    <span class="author-name">Emma Larsson</span>
+                    <span class="date">Apr 18</span>
+                </div>
+                <p class="description">
+                    Discover how Viking sailors conquered the treacherous northern waters without modern navigational tools. Their sophisticated understanding of natural elements and innovative technologies revolutionized maritime exploration.
+                </p>
+                <button class="read-more">READ MORE</button>
+            </div>
+        </div>
+        
+        <!-- Article 4 -->
+        <div class="article">
+            <div class="article-img">
+                <img src="assets/img/xiva.jpg" alt="Medieval castle">
+                <div class="category">MEDIEVAL ARCHITECTURE</div>
+            </div>
+            <div class="article-content">
+                <h2>Castle Engineering: Medieval Marvels of Defense</h2>
+                <div class="author">
+                    <img src="/api/placeholder/50/50" alt="Author">
+                    <span class="author-name">Thomas Bennett</span>
+                    <span class="date">Jun 7</span>
+                </div>
+                <p class="description">
+                    Explore the sophisticated engineering principles behind medieval castle construction. From concentric walls to strategic water features, discover how castle designers combined art and science to create nearly impregnable fortresses.
+                </p>
+                <button class="read-more">READ MORE</button>
+            </div>
+        </div>
+        
+        <!-- Article 5 -->
+        <div class="article">
+            <div class="article-img">
+                <img src="assets/img/xiva.jpg" alt="Medieval manuscript">
+                <div class="category">MEDIEVAL LITERATURE</div>
+            </div>
+            <div class="article-content">
+                <h2>Lost Libraries: The Hidden Treasures of Medieval Knowledge</h2>
+                <div class="author">
+                    <img src="/api/placeholder/50/50" alt="Author">
+                    <span class="author-name">Sarah Chen</span>
+                    <span class="date">Jul 22</span>
+                </div>
+                <p class="description">
+                    Journey through the fascinating story of medieval libraries that vanished through time. From Alexandria to Timbuktu, these centers of learning preserved ancient wisdom and shaped intellectual history despite wars, fires, and natural disasters.
+                </p>
+                <button class="read-more">READ MORE</button>
+            </div>
+        </div>
+        
+        <!-- Article 6 -->
+        <div class="article">
+            <div class="article-img">
+                <img src="/api/placeholder/400/320" alt="Medieval market">
+                <div class="category">MEDIEVAL LIFE</div>
+            </div>
+            <div class="article-content">
+                <h2>Market Days: Commerce and Community in Medieval Towns</h2>
+                <div class="author">
+                    <img src="/api/placeholder/50/50" alt="Author">
+                    <span class="author-name">Mark Thompson</span>
+                    <span class="date">Aug 15</span>
+                </div>
+                <p class="description">
+                    Step into the bustling medieval marketplace where commerce, culture, and social life converged. Beyond simple transactions, these vibrant hubs served as centers for news exchange, legal proceedings, and cultural performances.
+                </p>
+                <button class="read-more">READ MORE</button>
+            </div>
+        </div>
+        
+        <!-- Article 7 -->
+        <div class="article">
+            <div class="article-img">
+                <img src="/api/placeholder/400/320" alt="Medieval medicine">
+                <div class="category">MEDIEVAL SCIENCE</div>
+            </div>
+            <div class="article-content">
+                <h2>Healing Arts: Medicine and Magic in the Middle Ages</h2>
+                <div class="author">
+                    <img src="/api/placeholder/50/50" alt="Author">
+                    <span class="author-name">Olivia Singh</span>
+                    <span class="date">Sep 9</span>
+                </div>
+                <p class="description">
+                    Examine the complex blend of empirical knowledge and supernatural beliefs that characterized medieval medicine. Despite limitations, practitioners developed sophisticated surgical techniques and herbal remedies that laid foundations for modern healthcare.
+                </p>
+                <button class="read-more">READ MORE</button>
+            </div>
+        </div>
+        
+        <!-- Article 8 -->
+        <div class="article">
+            <div class="article-img">
+                <img src="/api/placeholder/400/320" alt="Medieval food">
+                <div class="category">MEDIEVAL CULTURE</div>
+            </div>
+            <div class="article-content">
+                <h2>Feasting and Fasting: Food Culture in Medieval Europe</h2>
+                <div class="author">
+                    <img src="/api/placeholder/50/50" alt="Author">
+                    <span class="author-name">Robert Miller</span>
+                    <span class="date">Oct 28</span>
+                </div>
+                <p class="description">
+                    Delve into the contrasting culinary worlds of medieval society, from lavish noble banquets to humble peasant fare. Religious calendars and social hierarchies shaped not just what people ate, but how they understood their place in the cosmic order.
+                </p>
+                <button class="read-more">READ MORE</button>
+            </div>
+        </div>
+        
+        <!-- Article 9 -->
+        <div class="article">
+            <div class="article-img">
+                <img src="/api/placeholder/400/320" alt="Medieval pilgrimage">
+                <div class="category">MEDIEVAL RELIGION</div>
+            </div>
+            <div class="article-content">
+                <h2>Pilgrims' Progress: Sacred Journeys in Medieval Times</h2>
+                <div class="author">
+                    <img src="/api/placeholder/50/50" alt="Author">
+                    <span class="author-name">Jennifer Walsh</span>
+                    <span class="date">Nov 12</span>
+                </div>
+                <p class="description">
+                    Follow in the footsteps of medieval pilgrims as they traversed perilous routes in search of spiritual salvation. These journeys created cultural connections across Europe and beyond, fostering artistic exchange and economic development.
+                </p>
+                <button class="read-more">READ MORE</button>
+            </div>
+        </div>
+        
+        <!-- Article 10 -->
+        <div class="article">
+            <div class="article-img">
+                <img src="/api/placeholder/400/320" alt="Medieval tournament">
+                <div class="category">MEDIEVAL SOCIETY</div>
+            </div>
+            <div class="article-content">
+                <h2>Tournaments and Chivalry: The Making of Medieval Knights</h2>
+                <div class="author">
+                    <img src="/api/placeholder/50/50" alt="Author">
+                    <span class="author-name">Michael Blackwood</span>
+                    <span class="date">Dec 5</span>
+                </div>
+                <p class="description">
+                    Explore how tournaments evolved from deadly combat training to elaborate spectacles of pageantry and social display. These events shaped chivalric ideals and offered a stage where knights could demonstrate prowess, loyalty, and courtly refinement.
+                </p>
+                <button class="read-more">READ MORE</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
