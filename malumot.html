@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandiqli Bobo Shahrchasi</title>
+
+    <link href="assets/css/search.css" rel="stylesheet">
+    <link href="assets/css/praduktlist.css" rel="stylesheet">
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+  
+    <link rel="stylesheet" href="assets/css/malumot.css">
+    
+</head>
+<body class="index-page">
+    <header>
+        <!-- Navbar Start -->
+        <nav class="main-navbar">
+            <div class="logo">
+                <a href="">
+                    <h1 class="text-primary"> Sayt Nomi</h1>
+                </a>
+            </div>
+            <div class="links">
+                <ul class="nav-links">
+                    <li><a href="index.html">Asosiy</a></li>
+                    <li><a href="about.html">Biz Haqimizda</a></li>
+                    <li class="active"><a href="paxsa.html" class="active">Paxsa</a></li>
+                    <li><a href="gil.html">Gil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="extra">
+                <div class="search" id="search">
+                    <input type="text" id="search-input" placeholder="Qidiruv...">
+                </div>
+                <div class="login">
+                    <a href="" class="login-btn">Kirish</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+        <script>
+            // Navbar elementini tanlash
+            const main_navbar = document.querySelector('.main-navbar');
+
+            // Sahifa scroll qilinsa, class qo'shish yoki olib tashlash
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    main_navbar.classList.add('scrolled'); // Class qo'shish
+                } else {
+                    main_navbar.classList.remove('scrolled'); // Classni olib tashlash
+                }
+            });
+        </script>
+        <!-- Modal Start-->
+    </header>
+   <!-- Header Start-->
+   <div class="header-container">
+    <div class="header-container-in">
+        <h4>Sandiqli Bobo Shaharachas</h4>
+    </div>
+</div>
+<!-- Header End-->
+    
+    <main>
+        <section class="container main-content">
+            <div class="info-card">
+                <div class="card-header">Асосий маълумотлар</div>
+                <div class="card-body">
+                    <ul class="info-list">
+                        <li>
+                            <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <div>
+                                <strong>Жойлашув:</strong>
+                                <p>Хоразм вилояти Ҳазорасп тумани "Мухомон" қишлоғи</p>
+                            </div>
+                        </li>
+                        <li>
+                            <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/>
+                            </svg>
+                            <div>
+                                <strong>Даври:</strong>
+                                <p>Милоддан аввалги VI асрдан милодий IV асргача</p>
+                            </div>
+                        </li>
+                        <li>
+                            <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zm-4 7h20v-4H2v4zm2-3h2v2H4v-2z"/>
+                            </svg>
+                            <div>
+                                <strong>Қурилиш материаллари:</strong>
+                                <p>Хом ғишт, пахса - гувала, қум, ёғоч</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <div class="card-header">Тавсифи</div>
+                <div class="card-body">
+                    <p>Сандиқли Бобо шаҳарчаси Хоразмнинг энг қадимий ёдгорликларидан бири ҳисобланади. Археологик қазилмалар натижасида бу ҳудудда одамлар милоддан аввалги VI асрдан милодий IV асргача яшаганликлари аниқланган.</p>
+                    <p>Шаҳарча ўзининг ноёб меъморий услуби ва тарихий аҳамияти билан алоҳида ўрин тутади. Иншоот ўз даврининг юқори қурилиш технологияларидан фойдаланган ҳолда бунёд этилган.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Иншоотнинг бош фасади</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="assets/img/xiva.jpg" alt="Сандиқли Бобо шаҳарчаси - кўриниши 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/xiva.jpg" alt="Сандиқли Бобо шаҳарчаси - кўриниши 2">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="historical-info">
+            <div class="container">
+                <h2 class="section-title">Тарихий маълумот</h2>
+                <div class="info-content">
+                    <p>Сандиқли Бобо шаҳарчаси қадимги Хоразм давлатининг муҳим маданий-савдо марказларидан бири бўлган. Бу шаҳарча Буюк Ипак йўли устида жойлашган бўлиб, шарқ ва ғарб ўртасидаги савдо алоқаларида муҳим аҳамият касб этган.</p>
+                    
+                    <p>Археологик тадқиқотлар натижасида шаҳарчада хунармандчилик устахоналари, савдо растаси, ибодатхона ва турар-жой мажмуалари мавжуд бўлганлиги аниқланган. Топилган буюмлар орасида сопол идишлар, тангалар, заргарлик буюмлари ва бошқа маданий-маиший ашёлар мавжуд.</p>
+                    
+                    <p>Милодий IV асрга келиб, шаҳарча аҳолиси табиий офатлар ёки ҳарбий ҳаракатлар натижасида бу ҳудудни тарк этишга мажбур бўлган деб тахмин қилинади. Шундан сўнг шаҳарча секин-аста қум остида қолиб, унутилган.</p>
+                    
+                    <p>XX асрнинг ўрталарида олиб борилган археологик қазишмалар натижасида шаҳарча қайта "очилган" ва ўрганила бошланган. Бугунги кунда Сандиқли Бобо шаҳарчаси Ўзбекистоннинг муҳим тарихий-маданий мероси сифатида қўриқланади.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="technical-status">
+            <div class="container">
+                <h2 class="section-title">Меъморий иншоотнинг техник ҳолати</h2>
+                <div class="info-content">
+                    <p>Ҳозирги кунда Сандиқли Бобо шаҳарчаси қисман сақланган ҳолатда. Археологик қазишмалар натижасида очилган иншоот қолдиқлари махсус консервация қилинган. Ёдгорликнинг асосий деворлари ва пойдевор қисмлари сақланиб қолган.</p>
+                    
+                    <p>Вақт ўтиши ва табиий омиллар таъсирида иншоотнинг айрим қисмлари емирилган. Дастлабки қурилиш материаллари - хом ғишт ва пахса вақт ўтиши билан эрозияга учраган. Бироқ, ёдгорликнинг умумий тарҳи ва қурилиш услуби ҳақида тасаввур ҳосил қилиш имконини берадиган элементлар сақланиб қолган.</p>
+                    
+                    <p>Ёдгорликни сақлаб қолиш мақсадида консервация ишлари олиб борилади. Қазиб олинган майдонлар атрофи ўраб олинган ва ёдгорликни ташқи таъсирлардан ҳимоя қилиш чоралари кўрилган.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a>
+
+    
+    <!--FOUTER START-->
+
+    <footer id="footer" class="footer dark-background">
+        <div class="container">
+
+            <div class="social-links d-flex justify-content-center">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-telegram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+
+    </footer>
+    <!--FOUTER eND-->
+
+
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+        // Scroll animation for elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            const animatedElements = document.querySelectorAll('.info-card, .gallery-item, .info-content');
+            animatedElements.forEach(el => {
+                el.style.animationPlayState = 'paused';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
