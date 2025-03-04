@@ -1,0 +1,31 @@
+.container-map {
+    background-color: #ffffff; 
+    padding: 40px 0; 
+  }
+  
+  #map {
+    margin: 10px auto; 
+    z-index: 2;
+    height: 500px; 
+    width: 90%;   
+    display: block; 
+    border-radius: 10px; 
+  }
+  
+  .section-title h2 {
+    font-size: 32px; 
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .section-title p {
+    font-size: 16px;
+    color: #666666;
+    margin-top: 10px; 
+  }
+  .leaflet-popup-content img {
+    width: 100%; /* Rasmni kengligiga moslashtirish */
+    height: auto; /* Rasmning balandligini nisbatan sozlash */
+    border-radius: 5px; /* Rasmni yumshatish */
+    margin-top: 10px; /* Rasm va matn orasidagi bo'sh joy */
+}

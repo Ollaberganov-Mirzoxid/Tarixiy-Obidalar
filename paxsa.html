@@ -60,8 +60,29 @@
                     <input type="text" id="search-input" placeholder="Qidiruv...">
                 </div>
                 <div class="login">
-                    <a href="" class="login-btn">Kirish</a>
+          
+                    <a class="login-btn" href="#" onclick="openModal()">Kirish</a>
+                  </div>
                 </div>
+              </nav>
+              <div class="modal" id="loginModal" onclick="outsideClick(event)">
+                <div class="background">
+                  <div class="shape"></div>
+                  <div class="shape"></div>
+              </div>
+              <form>
+                  <h3>Tizimga kirish</h3>
+          
+                  <label for="username">Login</label>
+                  <input type="text" placeholder="Logini" id="username">
+          
+                  <label for="password">Parol</label>
+                  <input type="password" placeholder="Parol" id="password">
+          
+                  <button>Kirish</button>
+                  
+              </form>
+              </div>
             </div>
         </nav>
         <!-- Navbar End -->
@@ -79,6 +100,10 @@
             });
         </script>
         <!-- Modal Start-->
+
+
+
+        
     </header>
 
     <!-- Header Start-->

@@ -31,7 +31,10 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/navbar.css">
   <link rel="stylesheet" href="assets/css/form.css">
-
+  <link rel="stylesheet" href="assets/css/maps.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArJaI6nuGsk0j5K-i-S7G2BCfqe-8ih9k&callback=initMap&libraries=places" async defer></script>
+  
 </head>
 
 <body class="index-page">
@@ -59,10 +62,34 @@
           <input type="text" id="search-input" placeholder="Qidiruv...">
         </div>
         <div class="login">
-          <a href="" class="login-btn">Kirish</a>
+          
+          <a class="login-btn" href="#" onclick="openModal()">Kirish</a>
         </div>
       </div>
     </nav>
+    <div class="modal" id="loginModal" onclick="outsideClick(event)">
+      <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h3>Tizimga kirish</h3>
+
+        <label for="username">Login</label>
+        <input type="text" placeholder="Logini" id="username">
+
+        <label for="password">Parol</label>
+        <input type="password" placeholder="Parol" id="password">
+
+        <button>Kirish</button>
+        
+    </form>
+    </div>
+
+
+
+
+
     <!-- Navbar End -->
     <script>
       // Navbar elementini tanlash
@@ -289,8 +316,17 @@
 
     <!--Statistics End -->
 
+    
 
-
+    <div class="container-map">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Obidalar manzili</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, optio.</p>
+      </div><!-- End Section Title -->
+      <div id="map"></div>
+    </div>
+    
+  
 
 
 
@@ -330,8 +366,10 @@
 
     <!--  JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/maps.js"></script>
     <script src="assets/js/praduktlist.js"></script>
-
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="assets/js/maps.js"></script
 
 </body>
 
