@@ -54,15 +54,14 @@
 }
 
 .card .imgBox img {
-    max-width: 100%;
-    
-    transition: .5s;
+  max-width: 100%;
+  transition: transform 0.5s ease;
 }
 
 .card:hover .imgBox img {
-    max-width: 90%;
-      
+  transform: scale(1.1); /* Rasmi kattalashtiramiz */
 }
+
 
 .card .contentBox {
   position: relative;
