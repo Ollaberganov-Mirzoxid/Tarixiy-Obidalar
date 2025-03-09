@@ -244,13 +244,7 @@
             padding: 40px 0;
         }
         
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
+
         
         @keyframes fadeIn {
             from { opacity: 0; }
